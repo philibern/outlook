@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path": "outlook/index.yml",
+      "redirect_url": "/microsoft-365/outlook/overview-new-outlook-windows",
+      "redirect_document_id": false
+    }
+  ]
+}
