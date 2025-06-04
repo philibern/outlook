@@ -29,7 +29,7 @@ In Microsoft Outlook, users can create PST files or add new items to existing PS
 
 ## Prevent additions to an existing PST file
 
-To prevent users from adding new data or content to an existing PST file, add the **PSTDisableGrow** registry entry, and then set the value to `1`. Use these steps:
+To prevent users from adding new data or content to an existing PST file, add the **PSTDisableGrow** registry entry, and then set the value to `1`. Use the following steps:
 
 1. Open Registry Editor.
 
@@ -55,7 +55,7 @@ To prevent users from adding new data or content to an existing PST file, add th
 
 ## Prevent the addition of new PST files
 
-To prevent users from connecting a PST file to Outlook, add the **DisablePST** registry entry, and then set the value to `1`. Use these steps:
+To prevent users from connecting a PST file to Outlook, add the **DisablePST** registry entry, and then set the value to `1`. Use the following steps:
 
 1. Open Registry Editor.
 
