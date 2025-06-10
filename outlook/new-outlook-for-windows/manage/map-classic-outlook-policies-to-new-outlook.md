@@ -11,11 +11,12 @@ ms.custom:
   - Outlook for Windows
   - CSSTroubleshoot
   - CI 3448
+  - CI 6144
 ms.reviewer: cibeler, vickim, jhollander, jeffkalv, meerak, v-shorestris
 appliesto:
   - New Outlook for Windows
 search.appverid: MET150
-ms.date: 02/13/2025
+ms.date: 06/10/2025
 ---
 
 # Map classic Outlook policies to new Outlook
