@@ -3,14 +3,14 @@
 # For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
 # For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
 
-title:       # Add a title for the browser tab
-description: # Add a meaningful description for search results
+title: How to enable the new Outlook for Windows if Outlook for Web is blocked
+description: How to allow users to access the new Outlook for Windows while blocking access to Outlook for Web (OWA) using Conditional Access policies
 author:      colinmorris1992 # GitHub alias
 ms.author:   colinmorris # Microsoft alias
-ms.service:  # Add the ms.service or ms.prod value
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
+ms.service: outlook
+ms.topic: how-to
 ms.date:     06/12/2025
+ms.subservice: deploy-new-outlook
 ---
 
 # How to enable the new Outlook for Windows if Outlook for Web is blocked
