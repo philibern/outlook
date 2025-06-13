@@ -31,6 +31,9 @@ For more information, see [Enable or disable Outlook on the web for a mailbox i
 
 ## Blocking Outlook for Web for users with Conditional access
 
+> [!NOTE]
+> Setting this Conditional Access Policy will also block access to Teams on the browser (Teams desktop application will not be impacted).
+
 1. Go to portal.azure.com
 
 1. Open the __Microsoft Entra Conditional Access__ page, select the __Policies__ tab and click __New Policy__
