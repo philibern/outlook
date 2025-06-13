@@ -35,7 +35,7 @@ To block access to the mailbox in Outlook on the web while allowing access to th
        - **All users**
        - **Select users and groups**: Select **Directory roles** and/or **Users and groups** to specify the users who shouldn't access their mailboxes in Outlook on the web.
 
-       ![Screenshot showing the creation of the Conditional Access policy with specific users and group select as the inclusion method.](media/enablenewoutlookforwindowsifoutlookforwebisblocked/conditional-access-block-owa-select-users.png)
+       ![Screenshot showing the creation of the Conditional Access policy with specific users and group select as the inclusion method.](media/conditional-access-block-owa-select-users.png)
 
      - **Targeted resources**: Select **No targeted resources selected**. On the **Include** tab of the flyout that opens, configure the following settings:
        1. Select **Selected resources**.
@@ -53,7 +53,7 @@ To block access to the mailbox in Outlook on the web while allowing access to th
        - **Filter for devices**:  Select **Not configured**, and then configure the following settings in the **Filter for devices** flyout that opens:
          - **Configure**: Slide the toggle to **Yes**.
          - **Devices matching the rule**: Verify **Include filtered devices in policy**.
-         - Enter the following conditions one at a time by entering the values in the **Property**, **Operator**, and **Value** boxes, and then selecting **Add expression** after each one (the **And/Or** value is always **And**):
+         - Enter the following conditions one at a time by entering the values in the **Property**, **Operator**, and **Value** boxes, and then selecting **Add expression** after each one (and use the **And/Or** value **Or** after the first condition):
            - **Property**: `systemLabels`, **Operator**: `Not contains`, **Value**: `M365Managed`.
            - **Property**: `systemLabels`, **Operator**: `Contains`, **Value**: `M365Managed`.
            - **Property**: `isCompliant`, **Operator**: `Equals`, **Value**: `False`.
