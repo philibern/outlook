@@ -39,7 +39,7 @@ For more information, see [Enable or disable Outlook on the web for a mailbox i
    
    1. Users – In the __Include__ tab, choose the user, directory roles or guests you want to block from accessing Outlook for web, or chose __All users__ if you want to block it for everyone in your organization
    
-   1. Target Resource – In the __Include__ tab, choose __Select Resources__, then __Office 365__ under the __Select__ section
+   1. Target Resource – In the __Include__ tab, choose __Select Resources__, then __Office 365 Exchange Online__ under the __Select__ section
    
    1. Network – leave this Not configured
    
