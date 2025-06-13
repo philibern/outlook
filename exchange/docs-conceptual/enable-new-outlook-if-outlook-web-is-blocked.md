@@ -57,10 +57,10 @@ To block access to the mailbox in Outlook on the web while allowing access to th
 
            |And/Or|Property|Operator|Value|
            |---|---|---|---|
-           ||`systemLabels`|`Not contains`|`M365Managed`|
-           |**Or**|`systemLabels`|`Contains`|`M365Managed`|
-           |**Or**|`isCompliant`|`Equals`|`False`|
-           |**Or**|`isCompliant|`Equals`|`True`|
+           ||`systemLabels`|Not contains|`M365Managed`|
+           |**Or**|`systemLabels`|Contains|`M365Managed`|
+           |**Or**|`isCompliant`|Equals|False|
+           |**Or**|`isCompliant`|Equals|True|
 
          When you're finished on the **Filter for devices** flyout, select **Done**
 
