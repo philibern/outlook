@@ -54,10 +54,13 @@ To block access to the mailbox in Outlook on the web while allowing access to th
          - **Configure**: Slide the toggle to **Yes**.
          - **Devices matching the rule**: Verify **Include filtered devices in policy**.
          - Enter the following conditions one at a time by entering the values in the **Property**, **Operator**, and **Value** boxes, and then selecting **Add expression** after each one (and use the **And/Or** value **Or** after the first condition):
-           - **Property**: `systemLabels`, **Operator**: `Not contains`, **Value**: `M365Managed`.
-           - **Property**: `systemLabels`, **Operator**: `Contains`, **Value**: `M365Managed`.
-           - **Property**: `isCompliant`, **Operator**: `Equals`, **Value**: `False`.
-           - **Property**: `isCompliant`, **Operator**: `Equals`, **Value**: `True`.
+
+           |And/Or|Property|Operator|Value|
+           |---|---|---|---|
+           ||`systemLabels`|`Not contains`|`M365Managed`|
+           |**Or**|`systemLabels`|`Contains`|`M365Managed`|
+           |**Or**|`isCompliant`|`Equals`|`False`|
+           |**Or**|`isCompliant|`Equals`|`True`|
 
          When you're finished on the **Filter for devices** flyout, select **Done**
 
