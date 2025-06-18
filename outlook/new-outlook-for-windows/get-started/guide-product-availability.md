@@ -4,7 +4,7 @@ description: Understand the stages of migration to the new Outlook for Windows a
 author: JanelleMcIntosh-MSFT 
 ms.author: janellem 
 manager: triciag
-ms.date: 07/16/2024  
+ms.date: 06/18/2025  
 ms.topic: overview
 ms.service: outlook
 ms.localizationpriority: medium
@@ -44,6 +44,8 @@ For more information about support and feedback, see the article: [Contact suppo
 
 After a period for feature capability development and quality assessment, the migration will move to the **opt-out** stage. In this stage, new Outlook is **on by default**, automatically bringing users into the new experience. IT administrators will have at least 12 months notice before this stage is implemented in managed Enterprise plans. Users can still revert to classic Outlook during this stage if needed.
 
+The notice about the option to opt-out was provided in October 2024. SMB opt-out was started in January 2025 and EDU opt-out will begin in January 2026, followed by Enterprise opt-out in April 2026.
+
 For more resources to assist with adoption and migration, see [New Outlook for Windows Adoption](https://aka.ms/newOutlookAdoption).
 
 ### Stage 3: Cutover
@@ -54,7 +56,7 @@ In the **cutover** stage, users are no longer be able to switch back to classic 
 
 The journey through these stages is represented in the timeline shown. After General Availability, Microsoft will use existing channels to provide a "notice of disruptive change" 12-months before moving to the opt-out and cutover stages in production rings.
 
-:::image type="content" source="../../media/guide-product-availability/new-outlook-ga-timeline-update-august-2024.png" alt-text="New Outlook availability timeline." lightbox="../../media/guide-product-availability/new-outlook-ga-timeline-update-august-2024.png":::
+:::image type="content" source="../../media/guide-product-availability/new-outlook-availability-timeline-june-2025.png" alt-text="New Outlook availability timeline." lightbox="../../media/guide-product-availability/new-outlook-availability-timeline-june-2025.png":::
 
 ## Prepare for migration and deployment
 
