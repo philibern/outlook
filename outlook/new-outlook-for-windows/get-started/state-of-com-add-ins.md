@@ -29,6 +29,8 @@ This article helps you determine whether your organization and its users still r
 
 You can view the COM add-ins installed for your organization's users via the Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com). To locate your installed apps, follow the instructions in [Microsoft 365 Apps health](/microsoft-365-apps/admin-center/microsoft-365-apps-health#add-in-health.md), ensuring you filter for only the Outlook add-ins.
 
+The Microsoft 365 Apps admin center allows to view and export 2 levels of add-in data: (1) the top-level view and (2) a drill down per add-in. To export an inventory bulk report containing all installed COM add-ins on devices with the available drill down level details, the administrator can create such report by querying the registry in which Microsoft stores the installed COM add-ins data. The COM add-ins data are stored on each device in the following registry key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Outlook\Addins\*. This can be achieved with any device management tool currently in use in the organization by the administrator (e.g., Microsoft Intune or any non-Microsoft device management tool).
+
 Individual users can find what COM add-ins are installed on their devices by navigating to **File** > **Options** > **Add-ins** in Outlook.
 
 ## Microsoft COM add-ins
