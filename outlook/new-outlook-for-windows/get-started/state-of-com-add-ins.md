@@ -12,8 +12,8 @@ ms.collection:
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
-description: "This article offers a detailed overview of Microsoft COM add-ins in classic Outlook, detailing their functionality, limitations, and the transition to web add-ins in the new Outlook for Windows."
-ms.date: 04/16/2024
+description: "Provides information to identify COM add-ins in your environment, and replace them with Office web add-ins in the new Outlook for Windows."
+ms.date: 06/23/2025
 ---
 
 # Identify COM add-ins in your organization
