@@ -12,24 +12,35 @@ ms.collection:
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
-description: "This article offers a detailed overview of Microsoft COM add-ins in classic Outlook, detailing their functionality, limitations, and the transition to web add-ins in the new Outlook for Windows."
-ms.date: 04/16/2024
+description: "Provides information to identify COM add-ins in your environment, and replace them with Office web add-ins in the new Outlook for Windows."
+ms.date: 06/23/2025
 ---
 
 # Identify COM add-ins in your organization
 
-This article helps you determine whether your organization and its users still rely on Microsoft COM add-ins. With these add-ins now in maintenance mode, it's important to evaluate their use within your systems. This article will assist you in identifying active COM add-ins, understanding their functions, and planning for future replacements to ensure compatibility and enhanced functionality with newer Microsoft Office technologies.
+This article helps you determine whether your organization and its users still rely on Microsoft COM add-ins. These add-ins are now in maintenance mode. Therefore, it's important to evaluate their use within your systems. This article can help you identify active COM add-ins, understand their functions, and plan for future replacements to ensure compatibility with the enhanced functionality of newer Microsoft Office technologies.
 
 > [!NOTE]
-> These COM add-ins are in maintenance mode and no new development will be done for these. The [new Outlook for Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) doesn't support COM add-ins, but it does support Office web add-ins. To learn more about Office Add-ins, see [Office Add-ins platform overview](/office/dev/add-ins/overview/office-add-ins).
+> Because these COM add-ins are in maintenance mode, no new development will be done on them. The [new Outlook for Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) doesn't support COM add-ins, but it does support Office web add-ins. To learn more about Office Add-ins, see [Office Add-ins platform overview](/office/dev/add-ins/overview/office-add-ins).
 >
-> For guidance on migrating COM add-ins to web add-ins, see [Migrate from COM to web add-ins](migrate-com-to-web-addins.md).
+> For guidance to migrate COM add-ins to web add-ins, see [Migrate from COM to web add-ins](migrate-com-to-web-addins.md).
 
 ## View installed COM add-ins
 
-You can view the COM add-ins installed for your organization's users via the Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com). To locate your installed apps, follow the instructions in [Microsoft 365 Apps health](/microsoft-365-apps/admin-center/microsoft-365-apps-health#add-in-health.md), ensuring you filter for only the Outlook add-ins.
+You can view the COM add-ins that are installed for your organization's users through the Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com). To locate your installed apps, follow the instructions in [Microsoft 365 Apps health](/microsoft-365-apps/admin-center/microsoft-365-apps-health#add-in-health.md). Make sure that you filter for only the Outlook add-ins.
 
-Individual users can find what COM add-ins are installed on their devices by navigating to **File** > **Options** > **Add-ins** in Outlook.
+The Microsoft 365 Apps admin center lets you view and export two levels of add-in data:
+
+- A top-level view
+- A drill down per add-in
+
+To create and export an inventory bulk report that contains all installed COM add-ins on devices and includes the available drill-down level details, an administrator can query the registry in which Microsoft stores the installed COM add-ins data. The COM add-ins data is stored on each device in the following registry subkey: 
+
+> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Outlook\Addins\*
+
+This query can be run for any device management tool that's currently in use in the organization (for example, Microsoft Intune or any non-Microsoft device management tool).
+
+Individual users can learn which COM add-ins are installed on their devices by navigating to **File** > **Options** > **Add-ins** in Outlook.
 
 ## Microsoft COM add-ins
 
