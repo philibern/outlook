@@ -14,11 +14,12 @@ ms.custom:
 ms.reviewer: aruiz; meerak
 appliesto: 
   - Outlook for Microsoft 365
+  - Outlook 2024
   - Outlook LTSC 2021    
   - Outlook 2019
   - Outlook 2016
 search.appverid: MET150
-ms.date: 04/01/2025
+ms.date: 06/24/2025
 ---
 # The Outlook AutoComplete list
 
@@ -41,6 +42,7 @@ Outlook limits the number of entries that you can save in the AutoComplete list.
 
 The limits are as follows:
 
+- Outlook for Microsoft 365: 1,000 entries
 - Outlook 2019: 1,000 entries
 - Outlook 2016: 1,000 entries
 
@@ -56,7 +58,7 @@ To access the AutoComplete setting, follow these steps:
 
 ## Copy the AutoComplete list
 
-Microsoft Office Outlook 2007 and earlier versions store the AutoComplete list in a nickname (.nk2) file on the disk. Outlook 2021, Outlook 2019, Outlook 2016, Outlook 2013, and Outlook 2010 store the AutoComplete list as a hidden message in your primary message store. They also allow the older .nk2 files be imported.
+Microsoft Office Outlook 2007 and earlier versions store the AutoComplete list in a nickname (.nk2) file on the disk. Outlook 2010 and later versions store the AutoComplete list as a hidden message in your primary message store. They also allow the older .nk2 files be imported.
 
 For the detailed steps to copy the AutoComplete list, and copy and import an .nk2 file, see [Import or copy the AutoComplete list to another computer](https://support.microsoft.com/office/import-or-copy-the-auto-complete-list-to-another-computer-83558574-20dc-4c94-a531-25a42ec8e8f0).
 
@@ -116,7 +118,7 @@ Because this configuration is untested, we don’t recommend it. When a large ni
     **Note**:
     >
     > - Specify the new value in *decimal form*. That is the correct form for the value.
-    > - Increase the limit by only a small amount. For example, to create a 20 percent increase in the limit for Outlook 2016, specify *1200* as the value for the `MaxNickNames`entry.
+    > - Increase the limit by only a small amount. For example, to create a 20 percent increase in the limit for Outlook 2021, specify *1200* as the value for the `MaxNickNames`entry.
 
 8. Exit Registry Editor.
 9. Start Outlook.
