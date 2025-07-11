@@ -1,6 +1,6 @@
 ---
-title: How to enable the new Outlook for Windows if Outlook on the web is blocked
-description: Admins can learn how to allow access the new Outlook for Windows while blocking access to Outlook on the web (formerly known as Outlook Web App or OWA) using Conditional Access policies in Microsoft Entra ID.
+title: How to enable new Outlook for Windows if Outlook on the web access is blocked
+description: Admins can learn how to allow access to new Outlook for Windows while blocking access to Outlook on the web (formerly known as Outlook Web App or OWA) using Conditional Access policies in Microsoft Entra ID.
 author: colinmorris1992 # GitHub alias
 ms.author: colinmorris # Microsoft alias
 ms.service: outlook
@@ -9,14 +9,14 @@ ms.date: 07/11/2025
 ms.subservice: deploy-new-outlook
 ---
 
-# Enable the new Outlook for Windows if Outlook on the web is blocked
+# Enable new Outlook for Windows if Outlook on the web access is blocked
 
-Admins can use the *OwaEnabled* parameter on the [Set-CASMailbox](/powershell/module/exchange/set-casmailbox) cmdlet in Exchange PowerShell to prevent users from accessing their mailbox in Outlook on the web (formerly known as Outlook Web App or OWA). But this setting also controls access to the new Outlook for Windows. Valid values for the *OwaEnabled* parameter are:
+Admins can use the *OwaEnabled* parameter on the [Set-CASMailbox](/powershell/module/exchange/set-casmailbox) cmdlet in Exchange PowerShell to prevent users from accessing their mailbox in Outlook on the web (formerly known as Outlook Web App or OWA). But this setting also controls access to new Outlook for Windows. Valid values for the *OwaEnabled* parameter are:
 
-- $true: Users can open their mailboxes in Outlook on the web and the new Outlook for Windows (assuming there aren't other policies that block access to the new Outlook for Windows). This value is the default.
-- $false: Users can't open their mailboxes in Outlook on the web or the new Outlook for Windows. Other settings that apply to Outlook on the web or the new Outlook for Windows in the **Set-CasMailbox** cmdlet are ignored.
+- $true: Users can open their mailboxes in Outlook on the web and new Outlook for Windows (assuming there aren't other policies that block access to new Outlook for Windows). This value is the default.
+- $false: Users can't open their mailboxes in Outlook on the web or new Outlook for Windows. Other settings that apply to Outlook on the web or new Outlook for Windows in the **Set-CasMailbox** cmdlet are ignored.
 
-To block access to the mailbox in Outlook on the web while allowing access to the mailbox in the new Outlook for Windows, admins can use Conditional Access policies in Microsoft Entra ID as described in this article.
+To block access to the mailbox in Outlook on the web while allowing access to the mailbox in new Outlook for Windows, admins can use Conditional Access policies in Microsoft Entra ID as described in this article.
 
 ## Use Conditional Access to block mailbox access in Outlook on the web only
 
@@ -35,7 +35,7 @@ To block access to the mailbox in Outlook on the web while allowing access to th
        - **All users**
        - **Select users and groups**: Select **Directory roles** and/or **Users and groups** to specify the users who shouldn't access their mailboxes in Outlook on the web.
 
-       ![Screenshot showing the creation of the Conditional Access policy with specific users and group select as the inclusion method.](media/conditional-access-block-owa-select-users.png)
+       ![Screenshot showing the creation of the Conditional Access policy with specific users and group select as the inclusion method.](../../media/conditional-access-block-owa-select-users.png)
 
      - **Targeted resources**: Select **No targeted resources selected**. On the **Include** tab of the flyout that opens, configure the following settings:
        1. Select **Selected resources**.
@@ -58,11 +58,11 @@ To block access to the mailbox in Outlook on the web while allowing access to th
 
 1. When you're finished on the **New** page, select **Create**
 
-All users included in the **Users** tab are blocked from accessing their mailboxes in Outlook on the web within one hour of saving the policy. Access to their mailboxes in the new Outlook for Windows isn't affected.
+All users included in the **Users** tab are blocked from accessing their mailboxes in Outlook on the web within one hour of saving the policy. Access to their mailboxes in new Outlook for Windows isn't affected.
 
-## Enable access to the new Outlook for Windows
+## Enable access to new Outlook for Windows
 
-Now that you blocked user access to mailboxes in Outlook on the web using Conditional Access, can set the *OwaEnabled* parameter on the **Set-CasMailbox** cmdlet to the value $true so users can access their mailboxes in the new Outlook for Windows. For instructions in PowerShell or the Exchange admin center (EAC), see the following articles:
+Now that you blocked user access to mailboxes in Outlook on the web using Conditional Access, can set the *OwaEnabled* parameter on the **Set-CasMailbox** cmdlet to the value $true so users can access their mailboxes in new Outlook for Windows. For instructions in PowerShell or the Exchange admin center (EAC), see the following articles:
 
 - **Exchange Online**: [Enable or disable Outlook on the web for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
 - **Exchange Server**: [Enable or disable Outlook on the web access to mailboxes](/exchange/clients/outlook-on-the-web/mailbox-access).
