@@ -26,7 +26,7 @@ _Original KB number:_ &nbsp; 970144
 
 You can hide one or more columns in the Address Book in Microsoft Outlook by using the `ABHiddenColumns` registry key. Add the `ABHiddenColumns` registry key, and then set the appropriate value for it.
 
-This section, method, or task contains steps that tell you how to modify the registry. However, serious problems might occur if you modify the registry incorrectly. Therefore, make sure that you follow these steps carefully. For added protection, back up the registry before you modify it. Then, you can restore the registry if a problem occurs. For more information about how to back up and restore the registry, see [How to back up and restore the registry in Windows](https://support.microsoft.com/help/322756).
+[!INCLUDE [Important registry alert](../../includes/registry-important-alert.md)]
 
 1. Start **Registry Editor**.
 1. Locate and then select the following registry subkey:
