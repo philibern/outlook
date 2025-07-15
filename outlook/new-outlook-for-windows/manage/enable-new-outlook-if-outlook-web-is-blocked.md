@@ -9,14 +9,18 @@ ms.date: 07/11/2025
 ms.subservice: deploy-new-outlook
 ---
 
-# Enable new Outlook for Windows if Outlook on the web access is blocked
+# How to enable the new Outlook for Windows if Outlook for Web is blocked 
 
-Admins can use the *OwaEnabled* parameter on the [Set-CASMailbox](/powershell/module/exchange/set-casmailbox) cmdlet in Exchange PowerShell to prevent users from accessing their mailbox in Outlook on the web (formerly known as Outlook Web App or OWA). But this setting also controls access to new Outlook for Windows. Valid values for the *OwaEnabled* parameter are:
+Admins can use the [OwaEnabled CASMailbox]([url](https://learn.microsoft.com/en-us/powershell/module/exchange/set-casmailbox?view=exchange-ps#example-1)) policy to prevent users within their organization from accessing Outlook for web, but this can impact many of the features in new Outlook for Windows. To prevent users from accessing Outlook for web while allowing access to the new Outlook for Windows, admins should use Conditional Access policies. This approach will not impact users' access to the new Outlook for Windows.  
+
+**Details on the OwaEnabled CASMailbox Policy **
+
+The OWAEnabled parameter enables or disables access to the mailbox using Outlook on the web and the new Outlook for Windows. Valid values are: 
 
 - $true: Users can open their mailboxes in Outlook on the web and new Outlook for Windows (assuming there aren't other policies that block access to new Outlook for Windows). This value is the default.
 - $false: Users can't open their mailboxes in Outlook on the web or new Outlook for Windows. Other settings that apply to Outlook on the web or new Outlook for Windows in the **Set-CasMailbox** cmdlet are ignored.
 
-To block access to the mailbox in Outlook on the web while allowing access to the mailbox in new Outlook for Windows, admins can use Conditional Access policies in Microsoft Entra ID as described in this article.
+For more information, see [Enable or disable Outlook on the web for a mailbox in Exchange Online]([url](https://learn.microsoft.com/en-us/Exchange/recipients-in-exchange-online/manage-user-mailboxes/managing-email-apps-for-user-mailboxes)), or [Enable or disable Outlook on the web access to mailboxes in Exchange Server.]([url](https://learn.microsoft.com/en-us/exchange/clients/outlook-on-the-web/mailbox-access)) 
 
 ## Use Conditional Access to block mailbox access in Outlook on the web only
 
@@ -62,7 +66,11 @@ All users included in the **Users** tab are blocked from accessing their mailbox
 
 ## Enable access to new Outlook for Windows
 
-Now that you blocked user access to mailboxes in Outlook on the web using Conditional Access, can set the *OwaEnabled* parameter on the **Set-CasMailbox** cmdlet to the value $true so users can access their mailboxes in new Outlook for Windows. For instructions in PowerShell or the Exchange admin center (EAC), see the following articles:
+Now that you have blocked OWA using Conditional Access, you can update the OwaEnabled CASMailbox policy to $true so that users can access the new Outlook for Windows. Follow the instructions in [this article]([url](https://learn.microsoft.com/en-us/exchange/clients/outlook-on-the-web/mailbox-access#use-the-exchange-management-shell-to-enable-or-disable-outlook-on-the-web-access-to-a-mailbox)) to update the OWAEnabled CASMailbox policy using PowerShell or the Exchange Admin Center.  
+
+To see how else you can control Outlook for Web with Conditional Access see our blog post on the topic: [Conditional Access in Outlook on the web for Exchange Online | Microsoft Community Hub ]([url](https://techcommunity.microsoft.com/blog/outlook/conditional-access-in-outlook-on-the-web-for-exchange-online/267069))
+
+For instructions in PowerShell or the Exchange admin center (EAC), see the following articles:
 
 - **Exchange Online**: [Enable or disable Outlook on the web for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
 - **Exchange Server**: [Enable or disable Outlook on the web access to mailboxes](/exchange/clients/outlook-on-the-web/mailbox-access).
