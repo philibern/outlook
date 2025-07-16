@@ -16,6 +16,8 @@ items:
       href: ../configuration/plan-outlook-deployment.md
     - name: Remove the Get and set up Outlook Mobile app on my phone option
       href: ../configuration/remove-get-and-set-up-outlook-mobile-app-option.md
+    - name: Restrict users from changing folder permissions
+      href: ../configuration/restrict-users-from-modifying-folder-permissions.md
     - name: Synchronization monitor improvements
       href: ../configuration/sync-monitor-improvements.md
   - name: Connectivity
@@ -34,6 +36,8 @@ items:
     items:
     - name: How to change the folder where emails and attachments are saved
       href: ../data-files/change-the-default-save-folder.md
+    - name: How to configure the size limit for both (.pst) and (.ost) files in Outlook
+      href: ../data-files/configure-size-limit-outlook-data-files.md
     - name: How to disable the background save feature
       href: ../data-files/disable-background-save-feature.md
     - name: Inbox Repair tool (Scanpst.exe) can run multiple passes
