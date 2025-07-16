@@ -1,9 +1,11 @@
 ---
-Title: Restrict users from changing folder permissions in Outlook
-Description: Describes how to restrict mailbox owners from changing folder permissions in Outlook.
+title: Restrict users from changing folder permissions in Outlook
+description: Describes how to restrict mailbox owners from changing folder permissions in Outlook.
 ms.author: meerak
 author: cloud-writer
 ms.reviewer: ragupt, mhaque
+ms.topic: how-to
+ms.date: 07/16/2025
 Applies to: 
 - Classic Outlook for Windows
 - New Outlook for Mac
