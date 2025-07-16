@@ -6,7 +6,7 @@ author: cloud-writer
 ms.reviewer: ragupt, mhaque
 ms.topic: how-to
 ms.date: 07/16/2025
-Applies to: 
+appliesto: 
 - Classic Outlook for Windows
 - New Outlook for Mac
 - New Outlook for Windows
