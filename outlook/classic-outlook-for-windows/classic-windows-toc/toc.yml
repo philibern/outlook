@@ -16,6 +16,8 @@ items:
       href: ../configuration/plan-outlook-deployment.md
     - name: Remove the Get and set up Outlook Mobile app on my phone option
       href: ../configuration/remove-get-and-set-up-outlook-mobile-app-option.md
+    - name: Restrict users from changing folder permissions
+      href: ../configuration/restrict-users-from-modifying-folder-permissions.md
     - name: Synchronization monitor improvements
       href: ../configuration/sync-monitor-improvements.md
   - name: Connectivity
