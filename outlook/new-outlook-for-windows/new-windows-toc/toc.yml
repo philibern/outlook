@@ -29,6 +29,8 @@ items:
   items:
   - name: Exchange Online PowerShell
     href: /powershell/exchange/exchange-online-powershell?context=/microsoft-365-apps/outlook/context/new-windows-context
+  - name: Enable new Outlook for Windows if Outlook for web is blocked
+    href: ../manage/enable-new-outlook-if-outlook-web-is-blocked.md
   - name: Manage updates
     href: ../manage/manage-updates-new-outlook-windows.md
   - name: Map classic Outlook policies to new Outlook
