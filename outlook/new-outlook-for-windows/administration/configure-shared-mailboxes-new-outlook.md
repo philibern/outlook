@@ -1,30 +1,28 @@
 ---
-title: "Troubleshoot shared mailboxes in new Outlook"
-ms.author: janellem
-author: JanelleMcIntosh-MSFT
-manager: triciag
+title: "Configure shared mailboxes in new Outlook"
+ms.author: meerak
+author: cloud-writer
+manager: dcscontentpm
 audience: ITPro
 ms.topic: overview
 ms.service: outlook
 ms.collection:
-- Tier3
-- deploy-new-outlook
+- administer-new-outlook
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
-description: "Provides steps to troubleshoot and enable shared mailbox in new Outlook using OWAMailboxPolicy settings and PowerShell commands"
-ms.date: 02/06/2024
+description: "Provides steps to configure shared mailbox in new Outlook using OWAMailboxPolicy settings and PowerShell commands"
+ms.date: 05/20/2025
+ms.reviewer: janellem
 ---
 
-# Troubleshoot shared mailboxes in new Outlook
+# Configure shared mailboxes in new Outlook
 
-Shared mailboxes are used when multiple people need access to the same mailbox. This setup is useful for emails dedicated to company information, support, reception desk, or other functions that multiple people share. An administrator can grant users permission to send email from the shared mailbox. This feature is useful for help and support mailboxes, allowing emails to be sent from "Contoso Support" or "Building A Reception Desk."
-
-For more information about shared mailboxes, see [About shared mailboxes](/microsoft-365/admin/email/about-shared-mailboxes)
+[Shared mailboxes](/microsoft-365/admin/email/about-shared-mailboxes) are used when multiple people need access to the same mailbox. This setup is useful for emails dedicated to company information, support, reception desk, or other functions that multiple people share. An administrator can grant users permission to send email from the shared mailbox. This feature is useful for help and support mailboxes, allowing emails to be sent from "Contoso Support" or "Building A Reception Desk."
 
 ## Use default OWAMailboxPolicy
 
-This example enables the new Outlook for Windows for all mailboxes, including shared mailboxes in the organization:
+This example enables new Outlook for Windows for all mailboxes, including shared mailboxes in the organization:
 ```powershell
 Get-OwaMailboxPolicy | Set-OwaMailboxPolicy -OneWinNativeOutlookEnabled $true
 ```
@@ -58,7 +56,7 @@ Confirm OneWinNativeOutlookEnable is applied to the new policy:
 Get-OWAMailboxPolicy SharedMailboxesPolicy | FL *onewin*
 ```
 
-Apply the new OWAMailboxPolicy on the shared mailbox: 
+Apply the new OWAMailboxPolicy on the shared mailbox:
 ```powershell
 Set-CASMailbox -<sharedmailbox Identity> -OWAMailboxPolicy “SharedMailboxPolicy”
 ```

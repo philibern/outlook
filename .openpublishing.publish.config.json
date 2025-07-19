@@ -7,7 +7,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       },
@@ -16,10 +16,13 @@
     }
   ],
   "notification_subscribers": [],
-  "need_preview_pull_request": true,
-  "redirection_files": [
-    ".openpublishing.redirection.json"
+  "sync_notification_subscribers": [
+    "v-garymoore@microsoft.com"
   ],
+  "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/outlook",
+  "git_repository_branch_open_to_public_contributors": "main",
+  "need_preview_pull_request": true,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -27,5 +30,10 @@
       "branch": "main",
       "branch_mapping": {}
     }
+  ],
+  "branch_target_mapping": {},
+  "targets": {},
+  "redirection_files": [
+    ".openpublishing.redirection.json"
   ]
 }

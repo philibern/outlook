@@ -13,7 +13,7 @@ items:
     items:
       - name: New Outlook for Windows
         tocHref: /purview/
-        topicHref: /microsoft-365-apps/outlook-temp/new-outlook-for-windows/overview-new-outlook
+        topicHref: /microsoft-365-apps/outlook/new-outlook-for-windows/overview-new-outlook
 
   - name: Microsoft 365 Apps
     tocHref: /powershell/
@@ -21,7 +21,7 @@ items:
     items:
       - name: New Outlook for Windows
         tocHref: /powershell/
-        topicHref: /microsoft-365-apps/outlook-temp/new-outlook-for-windows/overview-new-outlook
+        topicHref: /microsoft-365-apps/outlook/new-outlook-for-windows/overview-new-outlook
 
   - name: Microsoft 365 Apps
     tocHref: /microsoft-365/
@@ -29,4 +29,4 @@ items:
     items:
       - name: New Outlook for Windows
         tocHref: /microsoft-365/
-        topicHref: /microsoft-365-apps/outlook-temp/new-outlook-for-windows/overview-new-outlook
+        topicHref: /microsoft-365-apps/outlook/new-outlook-for-windows/overview-new-outlook

@@ -31,7 +31,26 @@ You can manage most features with Exchange PowerShell cmdlets. However, for feat
 >
 > Most features like Focused Inbox and Loop are specific to each account. If you disable these features, they turn off only for that account. However, in new Outlook, other features are disabled at the organization level, for example, if any account has in-product feedback disabled, the feature becomes unavailable for all accounts.
 >
-> Most of the mailbox policies apply to both Outlook on the web (formerly known as Outlook Web App or OWA) and New Outlook for Windows, so you can't enable them on one client but not the other.
+> Most of the mailbox policies apply to both Outlook on the web and new Outlook for Windows, so you can't enable them on one client but not the other.
+
+## Automatically configure account based on Active Directory Primary SMTP address
+
+We recommend that admins configure the new policy for easier account set up on managed devices and to guarantee that company policies are always respected. This policy setting allows admins to control the Primary Account in Outlook for Windows.
+
+Admins can set the policy *Require the Primary Account to match the Windows signed-in account* through the [Microsoft Intune admin center](https://intune.microsoft.com/) \> **Apps** \> **Policies for Office Apps**.
+
+If this policy is enabled, the primary SMTP address used to sign in to Windows is suggested the first time a user adds their account to new Outlook for Windows and the user can't change it.
+
+If you disable or don't configure this policy setting, users aren't restricted in their choice of Primary Account.
+
+By default, no default email address is suggested.
+
+If the user already added their personal accounts before this policy was enabled, the personal accounts are disabled when this policy is detected.
+
+Admins can use this setting with the `PersonalAccountsEnabled` parameter value `$false` on the **Set-OwaMailboxPolicy** to block users from adding their personal accounts to new Outlook.
+
+> [!IMPORTANT]
+> This feature uses OneAuth. Therefore, Microsoft Entra ID, Workplace join, or Office activation on Local Active Directory Join environments is required.
 
 ## Allow only corporate mailboxes to be added
 
@@ -79,25 +98,6 @@ For more information, see [Create a mailbox policy in Exchange Online for Outloo
 **Set-MailboxCalendarConfiguration** is another cmdlet for managing various features and capabilities for Calendar, including: Working Hours, Work Week, Shorten appointments and meetings, and more.
 
 For more information, see [Set-MailboxCalendarConfiguration](/powershell/module/exchange/set-mailboxcalendarconfiguration).
-
-## Automatically configure account based on Active Directory Primary SMTP address
-
-We recommend that admins configure the new policy for easier account set up on managed devices and to guarantee that company policies are always respected. This policy setting allows admins to control the Primary Account in Outlook for Windows.
-
-Admins can set the policy *Require the Primary Account to match the Windows signed-in account* through the [Microsoft Intune admin center](https://intune.microsoft.com/) \> **Apps** \> **Policies for Office Apps**.
-
-If this policy is enabled, the primary SMTP address used to sign in to Windows is suggested the first time a user adds their account to new Outlook for Windows and the user can't change it.
-
-If you disable or don't configure this policy setting, users aren't restricted in their choice of Primary Account.
-
-By default, no default email address is suggested.
-
-If the user already added their personal accounts before this policy was enabled, the personal accounts are disabled when this policy is detected.
-
-Admins can use this setting with the `PersonalAccountsEnabled` parameter value `$false` on the **Set-OwaMailboxPolicy** to block users from adding their personal accounts to new Outlook.
-
-> [!IMPORTANT]
-> This feature uses OneAuth. Therefore, Microsoft Entra ID, Workplace join, or Office activation on Local Active Directory Join environments is required.
 
 ## Specify what attachments can be downloaded
 

@@ -1,22 +1,22 @@
 ---
-title: "New Outlook for Windows troubleshooting overview"
-ms.author: janellem
-author: JanelleMcIntosh-MSFT
-manager: triciag
+title: "Architecture changes in new Outlook"
+ms.author: meerak
+author: cloud-writer
+manager: dcscontentpm
 audience: ITPro
 ms.topic: overview
 ms.service: outlook
 ms.collection:
-- Tier3
-- deploy-new-outlook
+- administration-new-outlook
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
-description: "Overview of troubleshooting issues with new Outlook for Windows"
-ms.date: 11/22/2024
+description: "Overview of architecture changes in new Outlook for Windows"
+ms.date: 05/20/2025
+ms.reviewer: janellem
 ---
 
-# Troubleshoot new Outlook
+# Architecture changes in new Outlook
 
 Some of the common steps users took to troubleshoot issues in classic Outlook are no longer needed in new Outlook. For example, creating a new profile or starting Outlook in safe mode is no longer necessary because of the underlying architecture changes in new Outlook.
 
@@ -27,20 +27,20 @@ Creating a new profile in classic Outlook was a common troubleshooting step to h
 The change to the profile experience is part of a broader effort by Microsoft to streamline the user experience and improve the stability and reliability of Outlook. The architecture in new Outlook integrates more robust error-handling mechanisms, offers improved support for modern email protocols, reduces the complexity of maintaining and configuring the application, and eliminates the need to create new profiles.
 
 ## Safe mode
- 
+
 Safe mode in classic Outlook was a frequently used troubleshooting mode due to the COM extensibility model which created instability. In new Outlook, the extensibility architecture with web add-ins is designed to protect Outlook from crashing if an add-in misbehaves. The new Outlook architecture, with automatic updates and a built-in safety net, has significantly reduced the need for the new Outlook to use a manual switch like Safe Mode as a default troubleshooting step. However, there may still be scenarios where it could be required.
 
 Safe Mode in the new Outlook for Windows is a troubleshooting feature that allows users to launch the application with minimal functionality. It provides a temporary, isolated session where users can access essential features like email and calendar while addressing issues or seeking support. Safe Mode preserves user settings and restores them upon returning to normal mode. These sessions are intended as a transitional state to help users return to the complete experience.
 
 Safe mode excludes some functionality including PST, S/MIME, offline usage, non-default client configurations, and Web add-ins.
 
-Syntax: 
+Syntax:
 ```
 olk.exe --safe
 ```
 
-If you need to run Outlook with the -safe syntax, we recommend working with Microsoft support to identify opportunities for product improvements. 
- 
+If you need to run Outlook with the -safe syntax, we recommend working with Microsoft support to identify opportunities for product improvements.
+
 ## Recovery mode
 
 Outlook may enter recovery mode if it fails to start five consecutive times. Similar to safe mode, in recovery mode Outlook will operate with minimal functionality, such as excluding support for PST, S/MIME, offline usage, non-default client configurations, and Web add-ins. 
