@@ -1,5 +1,5 @@
 ---
-title: How to suppress Microsoft 365 AutoDiscover redirect warning
+title: Suppress the Microsoft 365 AutoDiscover redirect warning in Outlook for Mac
 description: Describes an issue in which you receive an error message when Microsoft Outlook 2016 for Mac connects to a Microsoft 365 account. This article contains information about how to suppress Microsoft 365 AutoDiscover redirect warning.
 author: cloud-writer
 ms.author: meerak
@@ -12,35 +12,29 @@ ms.custom:
   - CSSTroubleshoot
 ms.reviewer: tasitae
 appliesto: 
-  - Outlook 2016 for Mac
+  - New Outlook for Mac
+  - Legacy Outlook for Mac
   - Exchange Online
 search.appverid: MET150
-ms.date: 01/30/2024
+ms.date: 05/21/2025
 ---
-# How to suppress the Microsoft 365 `AutoDiscover` redirect warning in Outlook 2016 for Mac
+# Suppress the Microsoft 365 AutoDiscover redirect warning in Outlook for Mac
 
 _Original KB number:_ &nbsp; 3206915
 
 ## Symptoms
 
-When Microsoft Outlook 2016 for Mac connects to a Microsoft 365 account, `Autodiscover` is redirected from HTTP to HTTPS, and you may receive a warning message that resembles the following example:
+When Microsoft Outlook for Mac connects to a Microsoft 365 account, the Autodiscover service is redirected from HTTP to HTTPS, and you might receive a warning message that resembles the following example:
 
 > Outlook was redirected to the server `Autodiscover-s.outlook.com` to get new settings for your account `user@domain.com`. Do you want to allow this server to configure your settings?  
 > `https://autodiscover-s.outlook.com/autodiscover/autodiscover.xml`  
 > Click Allow only if you fully trust the source, or if your Exchange administrator instructs you to.
 
-When this warning message occurs, you may select **Always use my response for this server**, and then select **Allow** in order not to be asked about this specific server again for this Outlook 2016 for Mac profile.
-
-You or administrators may want to suppress the initial warning message. This article contains information about how to do so.
+When this warning message displays, you can select **Always use my response for this server**, and then select **Allow** to not be asked about this specific server again for the current Outlook for Mac profile.
 
 ## Resolution
 
-Install the December 13, 2016 update for Outlook 2016 for Mac (version 15.29.0) or a later update, and then follow the steps to configure the Outlook 2016 for Mac Autodiscover redirect warning behavior when you connect to Microsoft 365.
-
-For information about this update or to download the Outlook update package, see:
-
-- [Release notes for Office 2016 for Mac](/officeupdates/release-notes-office-for-mac)
-- [Outlook update package](https://officecdn.microsoft.com/pr/c1297a47-86c4-4c1f-97fa-950631f94777/officemac/microsoft_outlook_15.29.16120900_updater.pkg)
+If you want to suppress the initial warning message, use the following steps.
 
 1. Quit Outlook if it's running.
 2. Open **Terminal** using one of the following methods:

@@ -1,0 +1,48 @@
+{
+  "redirections": [
+    {
+      "source_path": "outlook/new-outlook-for-windows/index.yml",
+      "redirect_url": "/microsoft-365-apps/outlook/overview-new-outlook-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "outlook/new-outlook-for-windows/overview-new-outlook.md",
+      "redirect_url": "/microsoft-365-apps/outlook/overview-new-outlook-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "outlook/new-outlook-for-windows/user-interface/public-folders-in-new-outlook.md",
+      "redirect_url": "/microsoft-365-apps/outlook/manage/public-folders-in-new-outlook",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "outlook/classic-outlook-for-windows/security/block-additional-attachment-file-name-extensions.md",
+      "redirect_url": "/microsoft-365-apps/outlook/email-security/block-additional-attachment-file-name-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "outlook/classic-outlook-for-windows/security/email-security-settings.md",
+      "redirect_url": "/microsoft-365-apps/outlook/email-security/email-security-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "outlook/new-outlook-for-windows/troubleshoot/troubleshoot-deployment-new-outlook.md",
+      "redirect_url": "/microsoft-365-apps/outlook/administration/resolve-deployment-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "outlook/new-outlook-for-windows/troubleshoot/troubleshoot-overview-new-outlook.md",
+      "redirect_url": "/microsoft-365-apps/outlook/administration/architecture-changes-new-outlook",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "outlook/new-outlook-for-windows/troubleshoot/troubleshoot-shared-mailboxes-new-outlook.md",
+      "redirect_url": "/microsoft-365-apps/outlook/administration/configure-shared-mailboxes-new-outlook",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "outlook/new-outlook-for-windows/administration/resolve-deployment-issues.md",
+      "redirect_url": "/outlook/troubleshoot/deployment/resolve-deployment-issues"
+    }
+  ]
+}

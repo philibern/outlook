@@ -118,6 +118,7 @@
     ],
     "globalMetadata": {
       "breadcrumb_path": "/microsoft-365-apps/outlook/breadcrumb/m365-apps-outlook/toc.json",
+      "feedback_github_repo": "MicrosoftDocs/outlook",
       "feedback_system": "Standard",
       "permissioned-type": "public",
       "uhfHeaderId": "MSDocsHeader-Outlook",

@@ -1,23 +1,20 @@
 ---
-title: "Overview of the classic Outlook for Windows"
-ms.author: janellem
-author: JanelleMcIntosh-MSFT
-manager: triciag
+title: "Advanced tasks in classic Outlook for Windows"
+ms.author: meerak
+author: Cloud-Writer
+manager: dcscontentpm
 audience: ITPro
 ms.topic: overview
 ms.service: outlook
 ms.collection:
-- Tier3
-- deploy-new-outlook
+- classic-outlook-win
 ms.localizationpriority: medium
-ms.custom: intro-overview
+ms.custom: intro
 recommendations: true
-description: "Provides an overview of the classic Outlook for Windows"
-ms.date: 11/09/2023
+description: "Provides an introduction to the topics in the content collection."
+ms.date: 05/08/2025
 ---
 
-# Overview of the classic Outlook for Windows
+# Advanced tasks in classic Outlook for Windows
 
-The classic Outlook for Windows is reimagined to be more agile, deliver faster feature deployment and availability, and provide a consistent experience in Windows.
-
-Classic Outlook is currently offered as a preview for commercial accounts and is generally available for consumer accounts.
+This content collection provides information about performing advanced tasks in classic Outlook for Windows such as performance improvement, profile and account management, configure calendaring features etc.
